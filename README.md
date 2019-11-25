@@ -1,13 +1,11 @@
 # JAX-WS Tracer V1.0
 
 ## Description
-The implementation of com/sun/xml/ws/client/RequestContext.java changed in jaxws-rt v2.2.6. The tracer in this field pack replaces the OOTB tracer provided with the CA APM SOA Performance Management (SPM) extension.
-Use this field pack if you are using jaxws-rt v2.2.6 and see this error message in you logs:
+The implementation of com/sun/xml/ws/client/RequestContext.java changed in jaxws-rt v2.2.6. The tracer in this extension replaces the OOTB tracer provided with the CA APM SOA Performance Management (SPM) extension.
+Use this extension if you are using jaxws-rt v2.2.6 and see this error message in you logs:
 ``java.lang.ClassCastException: java.util.HashMap cannot be cast to com.sun.xml.ws.transport.Headers
                 at com.sun.xml.ws.client.RequestContext.fill(RequestContext.java:339)
                 at com.sun.xml.ws.client.Stub.configureRequestPacket(Stub.java:454)``
-
-Provide a short description of the field pack here. See [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for markdown syntax.
 
 ## Short Description
 This field pack replaces the OOTB tracer provided with the CA APM SOA Performance Management (SPM) extension for jaxws-rt v2.2.6.
