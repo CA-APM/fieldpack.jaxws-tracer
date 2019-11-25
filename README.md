@@ -33,13 +33,13 @@ none
 APM agent 9.1+, SOA (web services) extension 9.1+
 
 ## Installation
-Copy ca.apm.fieldpacks.jaxws-tracer.jar into core/ext folder of CA APM java agent.
+Copy ``ca.apm.fieldpacks.jaxws-tracer.jar`` into ``core/ext`` folder of CA APM java agent.
 
 ## Configuration
 Replace the following lines in spm-correlation.pbd (then you won't need jax-ws.pbd).
-SetTracerClassMapping: WL_CLIENT_JAXWS_CorrelationTracer ``com.wily.powerpack.webservices.extension.agent.trace.weblogic.SEIStubCorrelationTracer com.wily.introscope.probebuilder.validate.ResourceNameValidator
+SetTracerClassMapping: WL_CLIENT_JAXWS_CorrelationTracer ``com.wily.powerpack.webservices.extension.agent.trace.weblogic.SEIStubCorrelationTracer com.wily.introscope.probebuilder.validate.ResourceNameValidator``
 with
-``SetTracerClassMapping: WL_CLIENT_JAXWS_CorrelationTracer ca.apm.fieldpacks.trace.weblogic.SEIStubCorrelationTracer com.wily.introscope.probebuilder.validate.ResourceNameValidator
+``SetTracerClassMapping: WL_CLIENT_JAXWS_CorrelationTracer ca.apm.fieldpacks.trace.weblogic.SEIStubCorrelationTracer com.wily.introscope.probebuilder.validate.ResourceNameValidator``
 Restart your application server.
 
 # Usage Instructions
